@@ -6,6 +6,7 @@ before_script:
   - brew update
   - brew uninstall xctool
   - brew install xctool
+  - pod repo add artsy https://github.com/artsy/Specs.git
 
 xcode_workspace: UnitTests.xcworkspace
 xcode_scheme: UnitTests

@@ -1,6 +1,6 @@
 # Artsy+UIColors
 
-[![Build Status](https://travis-ci.org/Artsy/Artsy+UIColors.svg)](https://travis-ci.org/Artsy/Artsy+UIColors)
+[![Build Status](https://travis-ci.org/artsy/Artsy-UIColors.svg)](https://travis-ci.org/artsy/Artsy-UIColors)
 
 ## Usage
 
