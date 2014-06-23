@@ -26,4 +26,4 @@ Orta, orta.therox@gmail.com
 
 ## License
 
-Artsy+UIColors is available under the BSD license. See the LICENSE file for more info.
+Artsy+UIColors is available under the MIT license. See the LICENSE file for more info.
