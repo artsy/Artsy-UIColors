@@ -2,7 +2,7 @@ PODS:
   - Artsy+UIColors (1.0.0):
     - EDColor (~> 0.4)
   - EDColor (0.4.0)
-  - Expecta (0.3.0)
+  - Expecta (0.3.1)
   - EXPMatchers+FBSnapshotTest (1.1.0):
     - Expecta
     - FBSnapshotTestCase
@@ -19,9 +19,9 @@ EXTERNAL SOURCES:
     :path: .
 
 SPEC CHECKSUMS:
-  Artsy+UIColors: 1b45cd5ef9e838713674e8a25123e699d8e701f7
+  Artsy+UIColors: d1d5e084a0e542d310c507acb5446bae6a322241
   EDColor: bcdb8600b7a456f4408ce1d7e7fc001588919254
-  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   EXPMatchers+FBSnapshotTest: fcc428d6a5d4410c1711aeda4456c9c5e93f98d3
   FBSnapshotTestCase: 9053afee1d66b4c7c313fcb0ae582a5e47bea9d0
   Specta: 9141310f46b1f68b676650ff2854e1ed0b74163a
