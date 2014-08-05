@@ -10,6 +10,7 @@
 // https://github.com/artsy/DesignWiki/wiki/Design-styleguide
 
 #import <EDColor/EDColor.h>
+#import "UIColor+ArtsyColors.h"
 
 @implementation UIColor (ArtsyColors)
 
