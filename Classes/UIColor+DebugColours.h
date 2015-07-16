@@ -1,11 +1,3 @@
-//
-//  UIColor+DebugColours.h
-//  Artsy
-//
-//  Created by Orta Therox on 08/10/2012.
-//  Copyright (c) 2012 Artsy. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 /// These are nicer shades of colours for debug work

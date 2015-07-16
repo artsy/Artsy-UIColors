@@ -1,7 +1,7 @@
 language: objective-c
-rvm: 1.9.3
+rvm: 2
 before_script:
   - export LANG=en_US.UTF-8
   - pod repo add artsy https://github.com/artsy/Specs.git
 script:
-  - xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone Retina (3.5-inch)' build test | xcpretty -c && exit ${PIPESTATUS[0]}
+  - xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone 6' build test | xcpretty -c && exit ${PIPESTATUS[0]}

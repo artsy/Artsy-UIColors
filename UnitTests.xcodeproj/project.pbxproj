@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		2755ED54EC2443D183AB3F36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		275D9C6A1230F78764C779DA /* Pods-UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		60AB5F2C18E47CA8005FD253 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60AB5F2F18E47CA8005FD253 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60AB5F3118E47CA8005FD253 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -26,7 +27,7 @@
 		60AB5F3B18E47CA8005FD253 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		60AB5F3D18E47CA8005FD253 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		D8A7E190AEAE4CACA100B3E2 /* libPods-UnitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB18316B5A744B2A94DFDFD6 /* Pods-UnitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.xcconfig"; path = "Pods/Pods-UnitTests.xcconfig"; sourceTree = "<group>"; };
+		DD4AEC8B246165D99A3CC119 /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,13 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FF7C608C300E1CA5F926B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				275D9C6A1230F78764C779DA /* Pods-UnitTests.debug.xcconfig */,
+				DD4AEC8B246165D99A3CC119 /* Pods-UnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		60AB5F2118E47C81005FD253 = {
 			isa = PBXGroup;
 			children = (
 				60AB5F3518E47CA8005FD253 /* UnitTests */,
 				60AB5F2E18E47CA8005FD253 /* Frameworks */,
 				60AB5F2D18E47CA8005FD253 /* Products */,
-				DB18316B5A744B2A94DFDFD6 /* Pods-UnitTests.xcconfig */,
+				07FF7C608C300E1CA5F926B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -164,7 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-UnitTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C9522EF51CC44D5581709ECD /* Check Pods Manifest.lock */ = {
@@ -221,7 +231,7 @@
 		};
 		60AB5F3E18E47CA8005FD253 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB18316B5A744B2A94DFDFD6 /* Pods-UnitTests.xcconfig */;
+			baseConfigurationReference = 275D9C6A1230F78764C779DA /* Pods-UnitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -269,7 +279,7 @@
 		};
 		60AB5F3F18E47CA8005FD253 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB18316B5A744B2A94DFDFD6 /* Pods-UnitTests.xcconfig */;
+			baseConfigurationReference = DD4AEC8B246165D99A3CC119 /* Pods-UnitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

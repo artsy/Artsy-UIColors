@@ -1,13 +1,5 @@
-//
-//  UIColor+ArtsyColors.m
-//  Artsy
-//
-//  Created by Leonard Grey on 11/27/12.
-//  Copyright (c) 2012 Artsy. All rights reserved.
-//
-
 // For references on names see
-// https://github.com/artsy/DesignWiki/wiki/Design-styleguide
+// https://www.artsy.net/style-guide/colors
 
 #import <EDColor/EDColor.h>
 #import "UIColor+ArtsyColors.h"
@@ -46,7 +38,7 @@
 
 + (UIColor *)artsyAttention
 {
-    return [UIColor colorWithHex:0xffffd7];
+    return [UIColor colorWithHex:0xfcecc5];
 }
 
 @end
