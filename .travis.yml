@@ -1,5 +1,5 @@
 language: objective-c
-rvm: 1.9.3
+rvm: 2
 before_script:
   - export LANG=en_US.UTF-8
   - pod repo add artsy https://github.com/artsy/Specs.git
