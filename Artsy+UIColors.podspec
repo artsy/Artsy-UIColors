@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes'
 
   s.frameworks = 'UIKit'
-  s.dependency 'EDColor', '~> 0.4'
+  s.dependency 'EDColor', '~> 1.0'
 end
  
