@@ -1,8 +1,10 @@
 language: objective-c
 rvm: 1.9.3
-before_install: gem install cocoapods --no-ri --no-rdoc
-before_script:
+before_install: 
   - export LANG=en_US.UTF-8
+  - gem install cocoapods --no-ri --no-rdoc
+
+before_script:
   - brew update
   - brew uninstall xctool
   - brew install xctool

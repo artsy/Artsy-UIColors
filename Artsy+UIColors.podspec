@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Artsy+UIColors"
-  s.version          = "1.0.0"
+  s.version          = "2.0.0"
   s.summary          = "UIColors for Artsy Apps."
   s.summary          = "UIColors for Artsy Apps. Probably not too useful if you're not in Artsy."
   s.homepage         = "http://github.com/Artsy/Artsy-UIColors"
@@ -10,11 +10,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/artsy'
 
   s.platform     = :ios, '7.0'
-  s.requires_arc = true
-
   s.source_files = 'Classes'
-
   s.frameworks = 'UIKit'
-  s.dependency 'EDColor', '~> 0.4'
 end
  

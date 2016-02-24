@@ -1,51 +1,60 @@
-//
-//  UIColor+ArtsyColors.m
-//  Artsy
-//
-//  Created by Leonard Grey on 11/27/12.
-//  Copyright (c) 2012 Artsy. All rights reserved.
-//
-
-// For references on names see
-// https://github.com/artsy/DesignWiki/wiki/Design-styleguide
+// See: https://github.com/artsy/elan
 
 #import <EDColor/EDColor.h>
 
 @implementation UIColor (ArtsyColors)
 
++ (UIColor *)ar_colorWithHex:(UInt32)hex
+{
+    return [self ar_colorWithHex:hex andAlpha:1];
+}
+
++ (UIColor *)ar_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha
+{
+    int r = (hex >> 16) & 0xFF;
+    int g = (hex >> 8) & 0xFF;
+    int b = (hex) & 0xFF;
+
+    return [UIColor colorWithRed:r / 255.0f
+                           green:g / 255.0f
+                            blue:b / 255.0f
+                           alpha:alpha];
+}
+
+
 + (UIColor *)artsyLightGrey
 {
-    return [UIColor colorWithHex:0xe5e5e5];
+    return [UIColor ar_colorWithHex:0xe5e5e5];
 }
 
 + (UIColor *)artsyMediumGrey
 {
-    return [UIColor colorWithHex:0xcccccc];
+    return [UIColor ar_colorWithHex:0xcccccc];
 }
 
 + (UIColor *)artsyHeavyGrey
 {
-    return [UIColor colorWithHex:0x888888];
+    return [UIColor ar_colorWithHex:0x888888];
 }
 
 + (UIColor *)artsyPurple
 {
-    return [UIColor colorWithHex:0x6a0bc1];
+    return [UIColor ar_colorWithHex:0x6a0bc1];
 }
 
 + (UIColor *)artsyPurpleWithAlpha:(CGFloat)alpha
 {
-    return [UIColor colorWithHex:0x6a0bc1 andAlpha:alpha];
+    return [UIColor ar_colorWithHex:0x6a0bc1 andAlpha:alpha];
 }
 
 + (UIColor *)artsyRed;
 {
-    return [UIColor colorWithHex:0xc73030];
+    return [UIColor ar_colorWithHex:0xc73030];
 }
 
 + (UIColor *)artsyAttention
 {
-    return [UIColor colorWithHex:0xffffd7];
+    return [UIColor ar_colorWithHex:0xffffd7];
 }
 
 @end

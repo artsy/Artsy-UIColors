@@ -20,6 +20,10 @@ To install the pod, add following line to your Podfile:
 
     pod "Artsy+UIColors"
 
+## How to update Colours?
+
+Run `rake update` - this will pull down [Artsy's elan](https://github.com/artsy/elan) which parses out colours.
+
 ## Author
 
 Orta, orta.therox@gmail.com

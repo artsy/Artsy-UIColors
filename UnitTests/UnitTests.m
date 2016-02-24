@@ -12,8 +12,7 @@
 #define EXP_SHORTHAND
 #import <Specta/Specta.h>
 #import <Expecta/Expecta.h>
-#import <EXPMatchers+FBSnapshotTest/EXPMatchers+FBSnapshotTest.h>
-
+#import <Expecta+Snapshots/EXPMatchers+FBSnapshotTest.h>
 #import <Artsy+UIColors/UIColor+ArtsyColors.h>
 #import <Artsy+UIColors/UIColor+DebugColours.h>
 
