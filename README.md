@@ -25,6 +25,7 @@ To install the pod, add following line to your Podfile:
 Run `rake update` - this will pull down [Artsy's elan](https://github.com/artsy/elan) which parses out colours.
 
 
+
 ## Colours
 <img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLightest_looks_right@2x.png">
   
@@ -60,4 +61,4 @@ Orta, orta.therox@gmail.com
 
 ## License
 
-Artsy+UIColors is available under the BSD license. See the LICENSE file for more info.
+Artsy+UIColors is available under the MIT license. See the LICENSE file for more info.

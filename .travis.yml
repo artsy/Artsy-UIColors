@@ -1,15 +1,7 @@
 language: objective-c
-rvm: 1.9.3
-before_install: 
-  - export LANG=en_US.UTF-8
-  - gem install cocoapods --no-ri --no-rdoc
-
+rvm: 2
 before_script:
-  - brew update
-  - brew uninstall xctool
-  - brew install xctool
+  - export LANG=en_US.UTF-8
   - pod repo add artsy https://github.com/artsy/Specs.git
-
-xcode_workspace: UnitTests.xcworkspace
-xcode_scheme: UnitTests
-xcode_sdk: iphonesimulator
+script:
+  - xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone 6' build test | xcpretty -c && exit ${PIPESTATUS[0]}

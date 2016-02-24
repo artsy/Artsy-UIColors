@@ -1,0 +1,19 @@
+{
+  "name": "Artsy+UIColors",
+  "version": "2.0.0",
+  "summary": "UIColors for Artsy Apps. Probably not too useful if you're not in Artsy.",
+  "homepage": "http://github.com/Artsy/Artsy-UIColors",
+  "license": "MIT",
+  "authors": {
+    "Orta": "orta.therox@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Artsy/Artsy-UIColors.git"
+  },
+  "social_media_url": "https://twitter.com/artsy",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "Classes",
+  "frameworks": "UIKit"
+}

@@ -76,4 +76,5 @@ it(@"artsyGreen looks right", ^{
     sut.backgroundColor = [UIColor artsyGreen];
     expect(sut).to.haveValidSnapshot();
 });
+
   SpecEnd
