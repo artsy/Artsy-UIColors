@@ -2,6 +2,10 @@ language: objective-c
 rvm: 2
 before_script:
   - export LANG=en_US.UTF-8
-  - pod repo add artsy https://github.com/artsy/Specs.git
+  - bundle install
+  - bundle exec pod repo add artsy https://github.com/artsy/Specs.git
+  - bundle exec pod install
+
+
 script:
   - xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone 6' build test | xcpretty -c && exit ${PIPESTATUS[0]}
