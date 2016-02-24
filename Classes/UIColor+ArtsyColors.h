@@ -1,31 +1,31 @@
-//
-//  UIColor+ArtsyColors.h
-//  Artsy
-//
-//  Created by Leonard Grey on 11/27/12.
-//  Copyright (c) 2012 Artsy. All rights reserved.
-//
-
 @interface UIColor (ArtsyColors)
 
-/// rules, button borders
-+ (UIColor *)artsyLightGrey;
++ (UIColor *)artsyGrayLightest;
 
-/// carrets and deselected UI elements
-+ (UIColor *)artsyMediumGrey;
++ (UIColor *)artsyGrayLighter;
 
-/// type under works
-+ (UIColor *)artsyHeavyGrey;
++ (UIColor *)artsyGray;
 
-/// standard Artsy logotype purple
++ (UIColor *)artsyGrayDark;
+
++ (UIColor *)artsyGrayDarker;
+
++ (UIColor *)artsyGrayDarkest;
+
++ (UIColor *)artsyPurpleLight;
+
 + (UIColor *)artsyPurple;
 
-+ (UIColor *)artsyPurpleWithAlpha:(CGFloat)alpha;
++ (UIColor *)artsyRedLight;
 
-/// standard error color
 + (UIColor *)artsyRed;
 
-/// communication to user
-+ (UIColor *)artsyAttention;
++ (UIColor *)artsyYellowLight;
+
++ (UIColor *)artsyYellow;
+
++ (UIColor *)artsyGreenLight;
+
++ (UIColor *)artsyGreen;
 
 @end

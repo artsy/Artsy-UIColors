@@ -12,6 +12,7 @@
 		60AB5F3418E47CA8005FD253 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AB5F3318E47CA8005FD253 /* UIKit.framework */; };
 		60AB5F3A18E47CA8005FD253 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60AB5F3818E47CA8005FD253 /* InfoPlist.strings */; };
 		60AB5F3C18E47CA8005FD253 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB5F3B18E47CA8005FD253 /* UnitTests.m */; };
+		60C939361C7E0B580010136C /* DebugUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C939351C7E0B580010136C /* DebugUnitTests.m */; };
 		B33667AE2BD78D8CD90A9A54 /* libPods-UnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B1E08679CE8061D5BD0C01D /* libPods-UnitTests.a */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		60AB5F3918E47CA8005FD253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60AB5F3B18E47CA8005FD253 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		60AB5F3D18E47CA8005FD253 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		60C939351C7E0B580010136C /* DebugUnitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugUnitTests.m; sourceTree = "<group>"; };
 		80B69866BF048297E75A33CF /* Pods-UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTests/Pods-UnitTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				60AB5F3B18E47CA8005FD253 /* UnitTests.m */,
+				60C939351C7E0B580010136C /* DebugUnitTests.m */,
 				60AB5F3618E47CA8005FD253 /* Supporting Files */,
 			);
 			path = UnitTests;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60AB5F3C18E47CA8005FD253 /* UnitTests.m in Sources */,
+				60C939361C7E0B580010136C /* DebugUnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

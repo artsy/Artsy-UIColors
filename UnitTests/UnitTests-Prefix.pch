@@ -1,10 +1,10 @@
-//
-//  Prefix header
-//
-//  The contents of this file are implicitly included at the beginning of every source file.
-//
+#import <UIKit/UIKit.h>
+#import <XCTest/XCTest.h>
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-#endif
+#define EXP_SHORTHAND
+#import <Specta/Specta.h>
+#import <Expecta/Expecta.h>
+#import <Expecta+Snapshots/EXPMatchers+FBSnapshotTest.h>
+
+#import <Artsy+UIColors/UIColor+ArtsyColors.h>
+#import <Artsy+UIColors/UIColor+DebugColours.h>

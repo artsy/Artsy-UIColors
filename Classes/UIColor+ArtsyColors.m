@@ -1,6 +1,5 @@
-// See: https://github.com/artsy/elan
 
-#import <EDColor/EDColor.h>
+// See: https://github.com/artsy/elan
 
 @implementation UIColor (ArtsyColors)
 
@@ -20,21 +19,39 @@
                             blue:b / 255.0f
                            alpha:alpha];
 }
+  + (UIColor *)artsyGrayLightest
+{
+    return [UIColor ar_colorWithHex:0xefefef];
+}
 
-
-+ (UIColor *)artsyLightGrey
++ (UIColor *)artsyGrayLighter
 {
     return [UIColor ar_colorWithHex:0xe5e5e5];
 }
 
-+ (UIColor *)artsyMediumGrey
++ (UIColor *)artsyGray
 {
     return [UIColor ar_colorWithHex:0xcccccc];
 }
 
-+ (UIColor *)artsyHeavyGrey
++ (UIColor *)artsyGrayDark
 {
-    return [UIColor ar_colorWithHex:0x888888];
+    return [UIColor ar_colorWithHex:0x999999];
+}
+
++ (UIColor *)artsyGrayDarker
+{
+    return [UIColor ar_colorWithHex:0x666666];
+}
+
++ (UIColor *)artsyGrayDarkest
+{
+    return [UIColor ar_colorWithHex:0x333333];
+}
+
++ (UIColor *)artsyPurpleLight
+{
+    return [UIColor ar_colorWithHex:0xb179d4];
 }
 
 + (UIColor *)artsyPurple
@@ -42,20 +59,34 @@
     return [UIColor ar_colorWithHex:0x6a0bc1];
 }
 
-+ (UIColor *)artsyPurpleWithAlpha:(CGFloat)alpha
++ (UIColor *)artsyRedLight
 {
-    return [UIColor ar_colorWithHex:0x6a0bc1 andAlpha:alpha];
+    return [UIColor ar_colorWithHex:0xf4acb2];
 }
 
-+ (UIColor *)artsyRed;
++ (UIColor *)artsyRed
 {
-    return [UIColor ar_colorWithHex:0xc73030];
+    return [UIColor ar_colorWithHex:0xcc3333];
 }
 
-+ (UIColor *)artsyAttention
++ (UIColor *)artsyYellowLight
 {
-    return [UIColor ar_colorWithHex:0xffffd7];
+    return [UIColor ar_colorWithHex:0xf9f8d8];
+}
+
++ (UIColor *)artsyYellow
+{
+    return [UIColor ar_colorWithHex:0xccc8a2];
+}
+
++ (UIColor *)artsyGreenLight
+{
+    return [UIColor ar_colorWithHex:0xb0d766];
+}
+
++ (UIColor *)artsyGreen
+{
+    return [UIColor ar_colorWithHex:0x4f8200];
 }
 
 @end
-
