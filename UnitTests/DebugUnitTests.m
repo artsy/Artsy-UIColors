@@ -21,7 +21,7 @@ describe(@"debug", ^{
         expect(sut).to.haveValidSnapshot();
     });
 
-    it(@"puple is exceedingly purple", ^{
+    it(@"purple is exceedingly purple", ^{
         sut.backgroundColor = [UIColor debugColourPurple];
         expect(sut).to.haveValidSnapshot();
     });
