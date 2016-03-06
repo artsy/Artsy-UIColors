@@ -1,6 +1,92 @@
 desc "Runs the specs [EMPTY]"
-task :spec do
-  # Provide your own implementation
+task :update do
+  system "git clone https://github.com/artsy/elan vendor/elan" unless Dir.exists? "vendor/elan"
+  Dir.chdir "vendor/elan" do
+    system "git pull"
+  end
+  require 'json'
+  colours = JSON.parse(File.read("vendor/elan/components/lib/variables/colors.json"))
+  
+  def objc(name)
+    "artsy" + name.split('-').map{|e| e.capitalize}.join.gsub("Color", "")
+  end
+  def objc_hex(colour)
+    colour.gsub("#", "0x")
+  end
+  
+  @artsy_colors = colours.map {|k, v| [objc(k), objc_hex(v)] }.to_h
+  
+  def update_file(file_path, before, per_color, after) 
+    content = before
+    @artsy_colors.each do |name, hex|
+      content << per_color.gsub("{name}", name).gsub("{colour}", hex)
+    end
+    content << after
+    File.open(file_path, 'w') { |tmp| tmp.write(content) }
+  end
+  
+
+  # Header file
+  prefix = "@interface UIColor (ArtsyColors)\n\n"
+  content = "+ (UIColor *){name};\n\n"
+  postfix = "@end"
+  update_file("Classes/UIColor+ArtsyColors.h", prefix, content, postfix)
+  
+  # Implementation file
+  prefix = %{
+// See: https://github.com/artsy/elan
+
+@implementation UIColor (ArtsyColors)
+
++ (UIColor *)ar_colorWithHex:(UInt32)hex
+{
+    return [self ar_colorWithHex:hex andAlpha:1];
+}
+
++ (UIColor *)ar_colorWithHex:(UInt32)hex andAlpha:(CGFloat)alpha
+{
+    int r = (hex >> 16) & 0xFF;
+    int g = (hex >> 8) & 0xFF;
+    int b = (hex) & 0xFF;
+
+    return [UIColor colorWithRed:r / 255.0f
+                           green:g / 255.0f
+                            blue:b / 255.0f
+                           alpha:alpha];
+}
+  }
+
+  content = "+ (UIColor *){name}\n{\n    return [UIColor ar_colorWithHex:{colour}];\n}\n\n"
+  postfix = "@end"
+  update_file("Classes/UIColor+ArtsyColors.m", prefix, content, postfix)
+  
+  # Update Tests
+  prefix = %{
+SpecBegin(UnitTests)
+
+__block UIView *sut;
+
+beforeEach(^{
+    sut = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+});
+  }
+  content = %{
+it(@"{name} looks right", ^{
+    sut.backgroundColor = [UIColor {name}];
+    expect(sut).to.haveValidSnapshot();
+});
+  }
+  postfix = "SpecEnd"
+  update_file("UnitTests/UnitTests.m", prefix, content, postfix)
+  
+  # README
+  readme = File.read("README.md")
+  prefix = readme.split("## Colours").first + "\n## Colours"
+  postfix = "\n## Author" + readme.split("## Author").last
+  content = %{
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/{name}_looks_right@2x.png">
+  }
+  update_file("README.md", prefix, content, postfix)  
 end
 
 task :version do

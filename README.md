@@ -20,6 +20,41 @@ To install the pod, add following line to your Podfile:
 
     pod "Artsy+UIColors"
 
+## How to update Colours?
+
+Run `rake update` - this will pull down [Artsy's elan](https://github.com/artsy/elan) which parses out colours.
+
+
+
+## Colours
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLightest_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLighter_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGray_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDark_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDarker_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDarkest_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyPurpleLight_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyPurple_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyRedLight_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyRed_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellowLight_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellow_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGreenLight_looks_right@2x.png">
+  
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGreen_looks_right@2x.png">
+  
 ## Author
 
 Orta, orta.therox@gmail.com
