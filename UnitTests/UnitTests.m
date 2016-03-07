@@ -7,33 +7,28 @@ beforeEach(^{
     sut = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
 });
   
-it(@"artsyGrayLightest looks right", ^{
-    sut.backgroundColor = [UIColor artsyGrayLightest];
+it(@"artsyGrayLight looks right", ^{
+    sut.backgroundColor = [UIColor artsyGrayLight];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyGrayLighter looks right", ^{
-    sut.backgroundColor = [UIColor artsyGrayLighter];
+it(@"artsyGrayRegular looks right", ^{
+    sut.backgroundColor = [UIColor artsyGrayRegular];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyGray looks right", ^{
-    sut.backgroundColor = [UIColor artsyGray];
+it(@"artsyGrayMedium looks right", ^{
+    sut.backgroundColor = [UIColor artsyGrayMedium];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyGrayDark looks right", ^{
-    sut.backgroundColor = [UIColor artsyGrayDark];
+it(@"artsyGraySemibold looks right", ^{
+    sut.backgroundColor = [UIColor artsyGraySemibold];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyGrayDarker looks right", ^{
-    sut.backgroundColor = [UIColor artsyGrayDarker];
-    expect(sut).to.haveValidSnapshot();
-});
-  
-it(@"artsyGrayDarkest looks right", ^{
-    sut.backgroundColor = [UIColor artsyGrayDarkest];
+it(@"artsyGrayBold looks right", ^{
+    sut.backgroundColor = [UIColor artsyGrayBold];
     expect(sut).to.haveValidSnapshot();
 });
   
@@ -42,39 +37,33 @@ it(@"artsyPurpleLight looks right", ^{
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyPurple looks right", ^{
-    sut.backgroundColor = [UIColor artsyPurple];
+it(@"artsyPurpleRegular looks right", ^{
+    sut.backgroundColor = [UIColor artsyPurpleRegular];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyRedLight looks right", ^{
-    sut.backgroundColor = [UIColor artsyRedLight];
+it(@"artsyRedRegular looks right", ^{
+    sut.backgroundColor = [UIColor artsyRedRegular];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyRed looks right", ^{
-    sut.backgroundColor = [UIColor artsyRed];
+it(@"artsyYellowRegular looks right", ^{
+    sut.backgroundColor = [UIColor artsyYellowRegular];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyYellowLight looks right", ^{
-    sut.backgroundColor = [UIColor artsyYellowLight];
+it(@"artsyYellowMedium looks right", ^{
+    sut.backgroundColor = [UIColor artsyYellowMedium];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyYellow looks right", ^{
-    sut.backgroundColor = [UIColor artsyYellow];
+it(@"artsyYellowBold looks right", ^{
+    sut.backgroundColor = [UIColor artsyYellowBold];
     expect(sut).to.haveValidSnapshot();
 });
   
-it(@"artsyGreenLight looks right", ^{
-    sut.backgroundColor = [UIColor artsyGreenLight];
+it(@"artsyGreenRegular looks right", ^{
+    sut.backgroundColor = [UIColor artsyGreenRegular];
     expect(sut).to.haveValidSnapshot();
 });
-  
-it(@"artsyGreen looks right", ^{
-    sut.backgroundColor = [UIColor artsyGreen];
-    expect(sut).to.haveValidSnapshot();
-});
-
   SpecEnd

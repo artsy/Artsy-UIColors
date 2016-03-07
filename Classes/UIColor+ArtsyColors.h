@@ -1,31 +1,27 @@
 @interface UIColor (ArtsyColors)
 
-+ (UIColor *)artsyGrayLightest;
++ (UIColor *)artsyGrayLight;
 
-+ (UIColor *)artsyGrayLighter;
++ (UIColor *)artsyGrayRegular;
 
-+ (UIColor *)artsyGray;
++ (UIColor *)artsyGrayMedium;
 
-+ (UIColor *)artsyGrayDark;
++ (UIColor *)artsyGraySemibold;
 
-+ (UIColor *)artsyGrayDarker;
-
-+ (UIColor *)artsyGrayDarkest;
++ (UIColor *)artsyGrayBold;
 
 + (UIColor *)artsyPurpleLight;
 
-+ (UIColor *)artsyPurple;
++ (UIColor *)artsyPurpleRegular;
 
-+ (UIColor *)artsyRedLight;
++ (UIColor *)artsyRedRegular;
 
-+ (UIColor *)artsyRed;
++ (UIColor *)artsyYellowRegular;
 
-+ (UIColor *)artsyYellowLight;
++ (UIColor *)artsyYellowMedium;
 
-+ (UIColor *)artsyYellow;
++ (UIColor *)artsyYellowBold;
 
-+ (UIColor *)artsyGreenLight;
-
-+ (UIColor *)artsyGreen;
++ (UIColor *)artsyGreenRegular;
 
 @end
