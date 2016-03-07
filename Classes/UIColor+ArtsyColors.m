@@ -19,74 +19,64 @@
                             blue:b / 255.0f
                            alpha:alpha];
 }
-  + (UIColor *)artsyGrayLightest
+  + (UIColor *)artsyGrayLight
 {
-    return [UIColor ar_colorWithHex:0xefefef];
+    return [UIColor ar_colorWithHex:0xf8f8f8];
 }
 
-+ (UIColor *)artsyGrayLighter
++ (UIColor *)artsyGrayRegular
 {
     return [UIColor ar_colorWithHex:0xe5e5e5];
 }
 
-+ (UIColor *)artsyGray
++ (UIColor *)artsyGrayMedium
 {
     return [UIColor ar_colorWithHex:0xcccccc];
 }
 
-+ (UIColor *)artsyGrayDark
-{
-    return [UIColor ar_colorWithHex:0x999999];
-}
-
-+ (UIColor *)artsyGrayDarker
++ (UIColor *)artsyGraySemibold
 {
     return [UIColor ar_colorWithHex:0x666666];
 }
 
-+ (UIColor *)artsyGrayDarkest
++ (UIColor *)artsyGrayBold
 {
     return [UIColor ar_colorWithHex:0x333333];
 }
 
 + (UIColor *)artsyPurpleLight
 {
-    return [UIColor ar_colorWithHex:0xb179d4];
+    return [UIColor ar_colorWithHex:0xe2d2ff];
 }
 
-+ (UIColor *)artsyPurple
++ (UIColor *)artsyPurpleRegular
 {
-    return [UIColor ar_colorWithHex:0x6a0bc1];
+    return [UIColor ar_colorWithHex:0x6e1fff];
 }
 
-+ (UIColor *)artsyRedLight
++ (UIColor *)artsyRedRegular
 {
-    return [UIColor ar_colorWithHex:0xf4acb2];
+    return [UIColor ar_colorWithHex:0xf7625a];
 }
 
-+ (UIColor *)artsyRed
++ (UIColor *)artsyYellowRegular
 {
-    return [UIColor ar_colorWithHex:0xcc3333];
+    return [UIColor ar_colorWithHex:0xfdefd1];
 }
 
-+ (UIColor *)artsyYellowLight
++ (UIColor *)artsyYellowMedium
 {
-    return [UIColor ar_colorWithHex:0xf9f8d8];
+    return [UIColor ar_colorWithHex:0xfce1a8];
 }
 
-+ (UIColor *)artsyYellow
++ (UIColor *)artsyYellowBold
 {
-    return [UIColor ar_colorWithHex:0xccc8a2];
+    return [UIColor ar_colorWithHex:0xf1af1b];
 }
 
-+ (UIColor *)artsyGreenLight
++ (UIColor *)artsyGreenRegular
 {
-    return [UIColor ar_colorWithHex:0xb0d766];
-}
-
-+ (UIColor *)artsyGreen
-{
-    return [UIColor ar_colorWithHex:0x4f8200];
+    return [UIColor ar_colorWithHex:0x0eda83];
 }
 
 @end

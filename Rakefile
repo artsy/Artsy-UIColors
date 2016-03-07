@@ -89,6 +89,22 @@ it(@"{name} looks right", ^{
   update_file("README.md", prefix, content, postfix)  
 end
 
+desc "Updates the test snapshots"
+task :new_snapshots do
+    before = "snapshotController.recordMode = record"
+    after = "snapshotController.recordMode = YES"
+    
+    path = "Pods/Expecta+Snapshots/EXPMatchers+FBSnapshotTest.m"
+    new_file = File.open(path).read.gsub(before, after)
+    File.open(path, 'w') { |tmp| tmp.write(new_file) }
+    
+    `rm -rf UnitTests/ReferenceImages/`
+    `xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone 6' build test`
+    
+    new_file = File.open(path).read.gsub(after, before)
+    File.open(path, 'w') { |tmp| tmp.write(new_file) }
+end
+
 task :version do
   git_remotes = `git remote`.strip.split("\n")
 

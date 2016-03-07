@@ -26,34 +26,32 @@ Run `rake update` - this will pull down [Artsy's elan](https://github.com/artsy/
 
 
 
+
+
 ## Colours
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLightest_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLight_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayLighter_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayRegular_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGray_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayMedium_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDark_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGraySemibold_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDarker_looks_right@2x.png">
-  
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayDarkest_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGrayBold_looks_right@2x.png">
   
 <img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyPurpleLight_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyPurple_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyPurpleRegular_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyRedLight_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyRedRegular_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyRed_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellowRegular_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellowLight_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellowMedium_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellow_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyYellowBold_looks_right@2x.png">
   
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGreenLight_looks_right@2x.png">
-  
-<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGreen_looks_right@2x.png">
+<img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/artsyGreenRegular_looks_right@2x.png">
   
 ## Author
 
