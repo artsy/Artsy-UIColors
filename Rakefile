@@ -6,32 +6,34 @@ task :update do
   end
   require 'json'
   colours = JSON.parse(File.read("vendor/elan/components/lib/variables/colors.json"))
-  
+
   def objc(name)
     "artsy" + name.split('-').map{|e| e.capitalize}.join.gsub("Color", "")
   end
+
   def objc_hex(colour)
     colour.gsub("#", "0x")
   end
-  
+
   @artsy_colors = colours.map {|k, v| [objc(k), objc_hex(v)] }.to_h
-  
-  def update_file(file_path, before, per_color, after) 
+
+  def update_file(file_path, before, per_color, after)
     content = before
     @artsy_colors.each do |name, hex|
-      content << per_color.gsub("{name}", name).gsub("{colour}", hex)
+      content << per_color.gsub("{name}", name).gsub("{colour}", hex).gsub("{colour_hex}", hex.gsub("0x", "#"))
     end
     content << after
     File.open(file_path, 'w') { |tmp| tmp.write(content) }
   end
-  
+
 
   # Header file
   prefix = "@interface UIColor (ArtsyColors)\n\n"
-  content = "+ (UIColor *){name};\n\n"
+  content = "/// <span style='display:block;width:3em;height:2em;border:1px solid black;background:{colour_hex}'></span>\n/// <br/> ({colour_hex})\n"
+  content += "+ (UIColor *){name};\n\n"
   postfix = "@end"
   update_file("Classes/UIColor+ArtsyColors.h", prefix, content, postfix)
-  
+
   # Implementation file
   prefix = %{
 // See: https://github.com/artsy/elan
@@ -59,7 +61,7 @@ task :update do
   content = "+ (UIColor *){name}\n{\n    return [UIColor ar_colorWithHex:{colour}];\n}\n\n"
   postfix = "@end"
   update_file("Classes/UIColor+ArtsyColors.m", prefix, content, postfix)
-  
+
   # Update Tests
   prefix = %{
 SpecBegin(UnitTests)
@@ -78,7 +80,7 @@ it(@"{name} looks right", ^{
   }
   postfix = "SpecEnd"
   update_file("UnitTests/UnitTests.m", prefix, content, postfix)
-  
+
   # README
   readme = File.read("README.md")
   prefix = readme.split("## Colours").first + "\n## Colours"
@@ -86,21 +88,21 @@ it(@"{name} looks right", ^{
   content = %{
 <img src="https://raw.githubusercontent.com/artsy/Artsy-UIColors/master/UnitTests/ReferenceImages/UnitTestsSpec/{name}_looks_right@2x.png">
   }
-  update_file("README.md", prefix, content, postfix)  
+  update_file("README.md", prefix, content, postfix)
 end
 
 desc "Updates the test snapshots"
 task :new_snapshots do
     before = "snapshotController.recordMode = record"
     after = "snapshotController.recordMode = YES"
-    
+
     path = "Pods/Expecta+Snapshots/EXPMatchers+FBSnapshotTest.m"
     new_file = File.open(path).read.gsub(before, after)
     File.open(path, 'w') { |tmp| tmp.write(new_file) }
-    
+
     `rm -rf UnitTests/ReferenceImages/`
     `xcodebuild -workspace UnitTests.xcworkspace -scheme UnitTests -sdk iphonesimulator -destination 'name=iPhone 6' build test`
-    
+
     new_file = File.open(path).read.gsub(after, before)
     File.open(path, 'w') { |tmp| tmp.write(new_file) }
 end
@@ -123,7 +125,7 @@ task :version do
           remote_spec_version.to_s()
     version = suggested_version_number
   end
-  
+
   puts "Enter the version you want to release (" + version + ") "
   new_version_number = $stdin.gets.strip
   if new_version_number == ""
@@ -158,7 +160,7 @@ task :release do
 
   puts "* Running specs"
   sh "rake spec"
- 
+
   puts "* Linting the podspec"
   sh "pod lib lint"
 
